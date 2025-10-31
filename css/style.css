@@ -136,5 +136,24 @@ footer {                       /*This is the code that styles my footer */
     font-size: 0.9rem;
 }
 
+.address {
+    align-items: center;
+}
 
+#searchBox {
+      width: 250px;
+      padding: 8px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+    }
 

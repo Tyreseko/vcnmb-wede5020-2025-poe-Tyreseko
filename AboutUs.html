@@ -56,7 +56,7 @@
           </p>  <!-- This is my first paragraph--> <!-- The  <p> is to start a paragraph -->
 
 
-         <h3 class="subheadings"> ssion </h3>   <!-- This is the code for my sub-heading  -->
+         <h3 class="subheadings"> Mission </h3>   <!-- This is the code for my sub-heading  -->
 
 
          <p>Save the Children agreed on a new worldwide strategy in the year 2015 Ambition for Children 2030. We also published a strategic plan for 2016-2018.
@@ -155,6 +155,84 @@
                  member of the Finance Committee. <!-- (SavetheChildren, 2025) -->
             </p> <!-- This is my Software technology paragraph-->
           
+            <h1>Attendance List</h1>
+  <input type="text" id="searchBox" placeholder="Enter a name to search">
+  <br>
+  <ul id="classList">
+    <li>The Save the Children story is and will always be one of hope and deeply passionate and committed people, 
+  determined to ensure the world is a better place for all our children.
+  It began with one woman who changed the world’s response to children in need.
+  On the 19 May in the year 1919 a woman by the name of Eglantyne Jebb began a worldwide movement, 
+  that movement was the Save the Children Fund.</li>
+    <li>The Board of Save the Children manages the business of the charity, ensures that all the activities are always 
+         within the law of UK and agreed charitable objects and is responsible for the oversight of, and agreeing on the 
+         financial plan for, programmes that are International</li>
+    <li>The vision for Save the children is to continue fighting for the rights for children. Save the children's vision to to 
+        give every child in our care the best education and health care we can. We aim to help many kids espectally in diffrent and even secluded 
+        areas.</li>
+    <li>She was always driven by the belief that all children have the right to a healthy, happy and fulfilling life.
+  The Save The Children fund started their work in South Africa in 1944 and their families in some of the 
+  smallest and most in need communities.Save the children South Africa was formed in 2013 the fund was used to fight for local children and their rights. 
+  Save the Children South Africa became an official member of the Save the Children International this is thanks to 
+  the merger of many Save the Children funds such as Gauteng, Save the Children UK and Save the Children Sweden, 
+  Save the Children KwaZulu-Natal.</li>
+    
+  </ul>
+
+  <footer>
+    <hr>
+    <div>
+      CheatSheet LLC <span id="currentYear"></span>
+    </div>
+    <hr>
+  </footer>
+
+  <script>
+  // Search function
+  const searchBox = document.getElementById('searchBox');
+  const classList = document.querySelectorAll('#classList li');
+  const listContainer = document.getElementById('classList');
+
+  // Create "no results" message (hidden by default)
+  const noResults = document.createElement('p');
+  noResults.textContent = 'No results found.';
+  noResults.style.display = 'none';
+  noResults.style.color = 'red';
+  noResults.style.fontWeight = 'bold';
+  listContainer.parentNode.insertBefore(noResults, listContainer.nextSibling);
+
+  // Helper function to highlight text
+  function highlightMatch(text, search) {
+    const regex = new RegExp(`(${search})`, 'gi');
+    return text.replace(regex, '<mark>$1</mark>');
+  }
+
+  searchBox.addEventListener('keyup', () => {
+    const nameToSearch = searchBox.value.trim().toLowerCase();
+    let matchCount = 0;
+
+    classList.forEach(item => {
+      const text = item.textContent.toLowerCase();
+
+      if (text.includes(nameToSearch)) {
+        item.style.display = '';
+        item.innerHTML = highlightMatch(item.textContent, nameToSearch);
+        matchCount++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    // Show or hide "no results" message
+    noResults.style.display = matchCount === 0 && nameToSearch !== '' ? 'block' : 'none';
+  });
+
+  // Display current year in footer
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+
+
             <!-- (Below is the code for my table with my information on it ) -->
             <table>
     <tr>
