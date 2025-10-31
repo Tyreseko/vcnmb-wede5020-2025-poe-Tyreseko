@@ -1,0 +1,140 @@
+body {     /*IIE,2025 */
+    background: linear-gradient(135deg, #f0ecec, #7d2e2e); /* smoother background */
+    font-family: "Poppins", sans-serif;  /* This code styles the font*/
+    color: #0e0505; /* softer text color for better contrast */
+    text-align: ce;  /* This code makes sure that the text are centerd*/
+    margin: 0;
+    padding: 0;
+    line-height: 2%; /* airy text spacing */
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+     /*Below is the code for my typyography it styles the size and weight of the fonts */
+    font-size: 16px; /* Controls the size of the text size */
+  font-weight: 400; /* 400 = normal, 700 = bold */
+  line-height: 2.0; /* Space between lines (unitless is recommended) */
+  letter-spacing: 0.5px; /* Space between letters */
+     /* This is the nav code and it styles the navigation bar */
+  nav {
+      background-color: #d45151;
+      padding: 10px;
+      text-align: center;
+    } 
+    nav a {     /*IIE,2025 */
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f8f0f0;
+      font-weight: bold;
+    }
+    nav a:hover {    /*IIE,2025 */
+      color: #160b0b; /* changes color when hovered */
+    }
+     
+     }
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* font size code */
+        background: #cce7ff; /* soft aqua */
+    }
+}
+
+/* Header */
+#header {  /*IIE,2025 */
+    color: #942f2f;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Subheadings */
+.subheadings {   /*IIE,2025 */
+    color: #663822;  /*This is the code for my subheadings */
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 15px 0;   
+    text-align: center;
+}
+.headings {   /*IIE,2025 */
+    color: #e67e22;   /*This is the code for my headings */
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 15px 0;
+}
+/* Links */
+.links a {    /*IIE,2025 */
+    
+    color: #f9dede ;     /*This is the code that styles my links */
+    font-family: inherit;
+    font-weight: 500;
+
+}
+
+.links a:hover {        /*This is the code for the hover function for my links */
+    color: #f0ecec;
+    text-decoration: underline;   /*IIE,2025 */
+}
+
+/* Table */
+table {      /*This is the code that styles my table that contents information */
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(27, 12, 12, 0.15);
+    border-radius: 8px;
+    overflow: hidden;    /*IIE,2025 */
+}
+
+th, td {
+    padding: 12px 20px;        /*This is the code that styles my table that contents information */
+    
+    border: 1px solid #0a0909;    /*IIE,2025 */
+}
+
+th {
+    background: #942f2f;
+    color: #fff;          /*This is the code that styles my table that contents information */
+    
+    font-weight: bold;   /*IIE,2025 */
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;   /*This is the code that styles my table that contents information */
+    
+}
+
+tr:hover {
+    background: #ffecec;    /*This is the code that styles my table that contents information */
+    
+    transition: 0.3s;
+}
+
+/* Buttons */
+button {                     /*This is the code that styles my button */
+    background: #942f2f;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 15px;
+    border-radius: 8px;
+    font-size: 16px;   /*IIE,2025 */
+    
+}
+
+button:hover {               /*This is the code that styles my button */
+    background: #722323;
+}
+
+
+/* Footer */
+footer {                       /*This is the code that styles my footer */
+    background: #c04646;
+    color: #fff;   /*IIE,2025 */
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+
+

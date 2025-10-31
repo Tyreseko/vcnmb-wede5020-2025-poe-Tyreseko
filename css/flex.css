@@ -1,0 +1,70 @@
+
+
+.container {      /*IIE,2025 */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;      /*IIE,2025 */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 20px; /* nicer spacing between columns */
+    flex-direction: row;
+}
+
+.column {     /* This code that styles the content in my columns*/
+    background-color: bisque;   /* This code styles  my color*/
+    padding: 20px;      /*IIE,2025 */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);   /* This will allow there to be a black shadow around my columns*/
+    flex: 1;
+    transition: all 0.3s ease; /* smooth animation */
+    outline: none; /* remove default focus outline */
+    cursor: pointer;
+}
+
+/* Specific columns */
+.left {      /* This code that styles  my columns*/
+    background-color: maroon;      /*IIE,2025 */
+}
+.center {     /* This code that styles  my columns*/  
+    background-color: rgb(161, 75, 75);     /*IIE,2025 */
+    flex: 2;
+}
+.right {    /* This code that styles  my columns*/
+    background-color: rgb(138, 79, 79);     /*IIE,2025 */
+}
+
+/* Hover effect */
+.column:hover {     /* This code that styles  my columns*/
+    transform: translateY(-5px); /* lift effect */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);     /*IIE,2025 */
+}
+
+/* Focus effect (keyboard/tab highlight) */
+.column:focus {
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.6);     /*IIE,2025 */
+    transform: translateY(-2px);
+}
+
+/* Active effect (when clicking) */
+.column:active {     /* This code that styles  my columns*/
+    transform: scale(0.97); /* slight press down */
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);    /*IIE,2025 */
+}
+
+ /* Responsive styling */
+@media (max-width: 768px) {    /*IIE,2025 */
+    .container {
+        flex-direction: column;
+    }
+    .column {
+        margin: 10px 0;
+    }
+    .left, .right {    /*IIE,2025 */
+        flex: 1;
+    }
+    .center {
+        flex: 2;
+    }
+}
