@@ -97,7 +97,7 @@
 After I submitted my two proposals, the sir said I needed to make a few changes. I then fixed the things he mentioned:
 
 <ul>
-  <li>9 August - Fixed my references.</li>
+  <li>9 August - Fixed m references.</li>
   <li>10 August - Made sure my headings were consistent.</li>
   <li>11 August - Added all my timelines across the three parts.</li>
 </ul>
