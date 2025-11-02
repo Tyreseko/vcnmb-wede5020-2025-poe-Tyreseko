@@ -20,6 +20,7 @@
     <a href="ServiceAndProducts.html">Services & Products</a> <!-- IIE, 2025 -->
     <a href="Enquiry.html">Enquiry</a>
     <a href="ContactUs.html">Contact Us</a>
+    <a href="Gallery.html">Gallary</a>
   </nav> 
           <h1 id="header"> Information </h1> <!-- This is the code so my heading is big -->
       <div style="text-align: center;"> <!-- IIE, 2025 -->
@@ -273,17 +274,44 @@
     
         
         
-      <footer style="text-align: center; padding: 20px; background-color:var(#F5F5F5)">
-    <div> <!-- (SavetheChildren, 2025) -->
-        <!-- This is the code to my footer and contains the youtube video for save the children. -->
+      <footer style="text-align: center; padding: 20px; background-color: var(#F5F5F5);">
+          <div class="image">
+       <img src="images/square-instagram-brands-solid-full.svg"height="100" width="100">
+       <img src="images/twitter-brands-solid-full.svg"height="100" width="100">
+       <img src="images/tiktok-brands-solid-full.svg"height="100" width="100">
+        <p>Current Time: <span id="currentYear"></span></p>
+         <p style="margin-top: 15px; font-weight: bold;">Save the Children</p>
+         
+      </footer>
+<script>
+        function updateClock() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+            };
+            const formattedDate = now.toLocaleDateString('en-ZA', options);
+            document.getElementById('currentYear').textContent = formattedDate;
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+    <div>
+      <!-- This is the code to my footer and contains the youtube video for save the children. -->
             <!-- This is the styling of my youtube video-->
        
-      <iframe width="700" height="250"
-            src="https://www.youtube.com/embed/jTxG6iVT1YI"  
+        <iframe width="700" height="250"
+            src="https://youtu.be/svMYgXqeTgI?si=yv_Y5icHJVrB7i8U"
             title="Changing Lives for 100 Years | Save the Children"
-            frameborder="0"   
+            frameborder="0"
             allowfullscreen>
         </iframe>
     </div>
-    <p style="margin-top: 15px; font-weight: bold;">Save the Children</p>
+   
 </footer>

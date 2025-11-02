@@ -2,7 +2,7 @@ body {     /*IIE,2025 */
     background: linear-gradient(135deg, #f0ecec, #7d2e2e); /* smoother background */
     font-family: "Poppins", sans-serif;  /* This code styles the font*/
     color: #0e0505; /* softer text color for better contrast */
-    text-align: ce;  /* This code makes sure that the text are centerd*/
+    text-align: center;  /* This code makes sure that the text are centerd*/
     margin: 0;
     padding: 0;
     line-height: 2%; /* airy text spacing */
@@ -144,6 +144,7 @@ footer {                       /*This is the code that styles my footer */
       width: 250px;
       padding: 8px;
       margin-bottom: 20px;
+      background-color: #ccc;
     }
 
     ul {
@@ -155,5 +156,10 @@ footer {                       /*This is the code that styles my footer */
       margin: 5px 0;
       padding: 8px;
       border-bottom: 1px solid #ccc;
+    }
+     map {
+      height: 400px; /* You can adjust the height */
+      width: 100%;
+      border-radius: 10px;
     }
 

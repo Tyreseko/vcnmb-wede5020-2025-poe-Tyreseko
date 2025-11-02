@@ -1,0 +1,237 @@
+body {     /*IIE,2025 */
+    background: linear-gradient(135deg, #f0ecec, #7d2e2e); /* smoother background */
+    font-family: "Poppins", sans-serif;  /* This code styles the font*/
+    color: #0e0505; /* softer text color for better contrast */
+    text-align: center;  /* This code makes sure that the text are centerd*/
+    margin: 0;
+    padding: 0;
+    line-height: 2%; /* airy text spacing */
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+     /*Below is the code for my typyography it styles the size and weight of the fonts */
+    font-size: 16px; /* Controls the size of the text size */
+  font-weight: 400; /* 400 = normal, 700 = bold */
+  line-height: 2.0; /* Space between lines (unitless is recommended) */
+  letter-spacing: 0.5px; /* Space between letters */
+     /* This is the nav code and it styles the navigation bar */
+  nav {
+      background-color: #d45151;
+      padding: 10px;
+      text-align: center;
+    } 
+    nav a {     /*IIE,2025 */
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f8f0f0;
+      font-weight: bold;
+    }
+    nav a:hover {    /*IIE,2025 */
+      color: #160b0b; /* changes color when hovered */
+    }
+     
+     }
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* font size code */
+        background: #cce7ff; /* soft aqua */
+    }
+}
+
+/* Header */
+#header {  /*IIE,2025 */
+    color: #942f2f;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Subheadings */
+.subheadings {   /*IIE,2025 */
+    color: #663822;  /*This is the code for my subheadings */
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 15px 0;   
+    text-align: center;
+}
+.headings {   /*IIE,2025 */
+    color: #e67e22;   /*This is the code for my headings */
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 15px 0;
+}
+/* Links */
+.links a {    /*IIE,2025 */
+    
+    color: #f9dede ;     /*This is the code that styles my links */
+    font-family: inherit;
+    font-weight: 500;
+
+}
+
+.links a:hover {        /*This is the code for the hover function for my links */
+    color: #f0ecec;
+    text-decoration: underline;   /*IIE,2025 */
+}
+
+/* Table */
+table {      /*This is the code that styles my table that contents information */
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(27, 12, 12, 0.15);
+    border-radius: 8px;
+    overflow: hidden;    /*IIE,2025 */
+}
+
+
+
+
+body:after{
+    content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+    display: none;
+}/*z index specifies if something is infront of another element or behind another element*/
+.lightboxOverlay {
+    position : absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    opacity: 0.8;
+    display: none;
+}
+.lightbox{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+
+}
+.lightbox .lb-image{
+    display:block;
+    height: auto;
+    border-radius: 3px;
+}
+.lightbox a img{
+border: none;
+}
+.lb-outerContainer{
+    position: relative;
+    background-color: azure;
+    width:250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.lb-outerContainer:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.lb-container{
+    padding: 4px
+}
+.lb-loader{
+    position: absolute;
+    top:43%;
+    left:0%;
+    height:25%;
+    text-align: center;
+    line-height: 0;
+}
+.lb-cancel{
+    display:block;
+    width:32px;
+    height:32px;
+    margin: 0 auto;
+    background: url(../images/loading.gif) no-repeat;
+}
+.lb-nav{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 10;
+}
+.lb-container > .nav{
+    left: 0;
+
+}
+.lb-nav a{
+    outline:none;
+
+}
+.lb-prev, .lb-next{
+    width:49%;
+    height:100%;
+    cursor:pointer;
+    /*Trick the internet into showing hover*/
+    display:block
+}
+.lb-prev{
+    left:0;
+    float:left;
+}
+.lb-prev:hover{
+    background: url(../images/prev.png) left 48% no-repeat;
+}
+.lb-next{
+    right:0;
+    float: right;
+}
+.lb-next:hover{
+    background: url(../images/next.png) right 48% no-repeat;
+}
+.lb-dataContainer{
+    margin:0 auto;
+    padding-top: 5px;
+    width:100%;
+    border-bottom-right-radius: 4px;
+}
+.lb-dataContainer:after{
+    content:"";
+    display: table;
+    clear:both;
+}
+.lb-data{
+    padding:0 4px;
+    color:rgb(255, 255, 255);
+}
+.lb-data .lb-details{
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+}
+.lb-data .lb-caption{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+}
+.lb-data .lb-number{
+    display:block;
+    clear:left;
+    padding-bottom:1em ;
+    font-size: 12px;
+    color: azure;
+}
+.lb-data .lb-close{
+    display:block;
+    float:right;
+    width:30px;
+    height:30px;
+    background: url(../images/close.png) top right no-repeat;
+    text-align: right;
+    outline: none;
+    opacity: 0.7;
+}
+.lb-data .lb-close:hover{
+    cursor:pointer;
+    opacity: 1;
+}

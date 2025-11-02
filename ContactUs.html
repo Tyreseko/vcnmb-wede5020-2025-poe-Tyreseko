@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html>
 <!-- IIE, 2025 -->
+<head>
+
+  <title>Contact Us</title>
+
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+  
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <style>
+
+    /* Simple map styling */
+    #map {
+      height: 400px;
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
  
-    <head> <!-- This is the head of the page -->
-     <title> Contact Us</title> <!-- This the name of my homepage -->
-     <!-- This code below is linked to my style.css folder and it is what contains the styling for my 
-   website pages. It contains the colour, font size, font-width and media screen -->
- 
-     <link rel="stylesheet" type= "text/css" href="./css/style.css" />
-    </head>
-    <body>
-         <nav>
+  <nav>
     <a href="Home.html">Home</a>
     <a href="AboutUs.html">About Us</a>
-    <a href="ServiceAndProducts.html">Services & Products</a> <!-- IIE, 2025 -->
+    <a href="ServiceAndProducts.html">Services & Products</a>
     <a href="Enquiry.html">Enquiry</a>
     <a href="ContactUs.html">Contact Us</a>
-         </nav>
-         <h1 id="header">Contact us</h1> <!-- This is the code so my heading is big -->
-          <!-- (SavetheChildren, 2025) -->
-        <h3 class="subheadings">Phone number</p> <br> <!-- This is the code to add the word phone number -->
+     <a href="Gallery.html">Gallary</a>
+  </nav>
 
-        <li> 070 - 338 44 48</li> <br> <!-- This is the code to add the word phone number -->
-         <!-- (SavetheChildren, 2025) -->
-        <p>Gmail</p> <br> <!-- This is the code to add the word gmail -->
+  <h1 id="header">Contact us</h1>
 
-        <li> info@savethechildren.nl</li> <br> <!-- This is the code to add the gmail name -->
-          <!-- (SavetheChildren, 2025) -->
-        <p>Address</p> <br> <!-- This is the code to add the word address -->
-        <li>7 Bell Road</li> <!-- This is the code to add the address -->
-           <!-- (SavetheChildren, 2025) -->
-       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19901.872962101505!2d5.474544571997071!3d51.42631057328151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6d9b2da4ba89b%3A0x13a68336659df488!2sNationaal%20Zwemcentrum%20de%20Tongelreep!5e0!3m2!1snl!2snl!4v1756139505080!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- Figure 12 -->
+  <h3 class="subheadings">Phone number</h3>
+  <li>070 - 338 44 48</li><br>
+
+   <h3 class="subheadings">Gmail</h3>
+  <li>info@savethechildren.nl</li><br>
+
+   <h3 class="subheadings">Address</h3>
+  <li>7 Bell Road</li><br>
+
+  <!-- 🌍 Leaflet Map replaces the old Google Maps iframe -->
+  <div id="map"></div>
+
+  <script>
+    // Create the map centered on your location
+    var map = L.map('map').setView([-33.9249, 18.4241], 13); // Example: Cape Town
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker with popup
+    L.marker([-33.9249, 18.4241])
+      .addTo(map)
+      .bindPopup('<b>Save the Children</b><br>7 Bell Road')
+      .openPopup();
+  </script>
+       
+
 
         <h2>Enquiry Form</h2>
     <section id="subheadings">
@@ -52,26 +93,87 @@
     <br><br>
 
      <button type="submit">Submit Form</button>
+     <script>
+  // Toast message on submit
+  document.querySelector('button[type="submit"]').addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent actual form submission (so the page doesn’t reload)
+    const toast = document.createElement('div');
+    toast.textContent = '✅ Application Submitted';
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.right = '20px';
+    toast.style.background = '#333';
+    toast.style.color = '#fff';
+    toast.style.padding = '10px 20px';
+    toast.style.borderRadius = '8px';
+    toast.style.fontSize = '16px';
+    toast.style.opacity = '0';
+    toast.style.transition = 'opacity 0.5s';
+
+    document.body.appendChild(toast);
+
+    // Fade in
+    setTimeout(() => (toast.style.opacity = '1'), 100);
+
+    // Remove after 3 seconds
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      setTimeout(() => toast.remove(), 500);
+    }, 3000);
+  });
+</script>
+
     <button type="reset">Clear</button>
        <script src="./js/validation.js"></script>
+      
+
+  
+  </script>
      </section>
     </body> <!-- This is the code that closes my body-->
         </html>   <!-- This is the code that closes my html-->
           <!-- IIE, 2025 -->
     
         <footer style="text-align: center; padding: 20px; background-color: var(#F5F5F5);">
+          <div class="image">
+       <img src="images/square-instagram-brands-solid-full.svg"height="100" width="100">
+       <img src="images/twitter-brands-solid-full.svg"height="100" width="100">
+       <img src="images/tiktok-brands-solid-full.svg"height="100" width="100">
+        <p>Current Time: <span id="currentYear"></span></p>
+         <p style="margin-top: 15px; font-weight: bold;">Save the Children</p>
+         
+      </footer>
+<script>
+        function updateClock() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+            };
+            const formattedDate = now.toLocaleDateString('en-ZA', options);
+            document.getElementById('currentYear').textContent = formattedDate;
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
     <div>
       <!-- This is the code to my footer and contains the youtube video for save the children. -->
             <!-- This is the styling of my youtube video-->
        
         <iframe width="700" height="250"
-            src="https://www.youtube.com/embed/jTxG6iVT1YI"
+            src="https://youtu.be/svMYgXqeTgI?si=yv_Y5icHJVrB7i8U"
             title="Changing Lives for 100 Years | Save the Children"
             frameborder="0"
             allowfullscreen>
         </iframe>
     </div>
-    <p style="margin-top: 15px; font-weight: bold;">Save the Children</p>
+   
 </footer>
 
         

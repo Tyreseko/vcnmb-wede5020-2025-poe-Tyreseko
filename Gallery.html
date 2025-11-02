@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta name = "description" content=" Query LightBox gallery example">
+        <meta name = "keywords" content="HTML, CSS , Javascript, JQuery">
+        <title> Foxes of the world</title>
+        <link rel="stylesheet" href = "css/lightbox.css" media = "screen" />
+
+        <style type="text/css">
+             a img {
+                border: solid 6px black;
+             }
+
+             a:hover img {
+                border: solid 6px rgb(24, 3, 3);
+             }
+        </style>
+    </header>
+    <body>
+      <nav>
+    <a href="Home.html">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="ServiceAndProducts.html">Services & Products</a> <!-- IIE, 2025 -->
+    <a href="Enquiry.html">Enquiry</a>
+    <a href="ContactUs.html">Contact Us</a>
+     <a href="Gallery.html">Gallary</a>
+  </nav> 
+        <h1> Gallary </h1>
+
+        <p>Below is all the images i used in the website</p>
+        <a href="images/Save-the-children-logo (1).jpg" data-lightbox="foxes" title = "Save the children logo"><img src = "images/Save-the-children-logo (1).jpg" alt="Island fox by Kevin Schafer"/></a>
+         <a href="images/services.webp" data-lightbox="foxes" title = "Save the children workers"><img src = "images/services.webp" alt="Fennec fox pup by Tad Motoyama"/></a>
+         <a href="images/outbreaks.webp" data-lightbox="foxes" title = "The outbreaks"><img src = "images/outbreaks.webp" alt="Red fox by Bill Bunyan"/></a>
+         <a href="images/outbreaks.jpg" data-lightbox="foxes" title = "The outbreaks"><img src = "images/outbreaks.jpg" alt="Arctic fox by Ikkutut"/></a>
+         <a href="images/OIP (9).jpg" data-lightbox="foxes" title = "Save the children workers"><img src = "images/OIP (9).jpg" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/OIP (5).jpg" data-lightbox="foxes" title = "Save the children workers"><img src = "images/OIP (5).jpg" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/OIP (2).jpg" data-lightbox="foxes" title = "Save the children workers"><img src = "images/OIP (2).jpg" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/OIP (1).jpg" data-lightbox="foxes" title = "Save the children workers"><img src = "images/OIP (1).jpg" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/Investor.webp" data-lightbox="foxes" title = "The investors"><img src = "images/Investor.webp" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/health.jpg" data-lightbox="foxes" title = "The health care"><img src = "images/health.jpg" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/GlobalBoard.webp" data-lightbox="foxes" title = "The global board"><img src = "images/GlobalBoard.webp" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/emergency.jpg" data-lightbox="foxes" title = "emergency services"><img src = "images/emergency.jpg" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/Education.webp" data-lightbox="foxes" title = "Education provided"><img src = "images/Education.webp" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/download.webp" data-lightbox="foxes" title = ""><img src = "images/download.webp" alt="Darwin fox by Bobbi Sinclair"/></a>
+         <a href="images/CEO.webp" data-lightbox="foxes" title = "The CEO of the company"><img src = "images/CEO.webp" alt="Darwin fox by Bobbi Sinclair"/></a>
+         
+         <script src="js/jquery-1.10.2.min.js"></script>
+         <script src="js/lightbox-2.6.min.js"></script>
+         <script src="js/modernizr.custom.js"></script>
+
+    </body>
+    <footer style="text-align: center; padding: 20px; background-color: var(#F5F5F5);">
+          <div class="image">
+       <img src="images/square-instagram-brands-solid-full.svg"height="100" width="100">
+       <img src="images/twitter-brands-solid-full.svg"height="100" width="100">
+       <img src="images/tiktok-brands-solid-full.svg"height="100" width="100">
+        <p>Current Time: <span id="currentYear"></span></p>
+         <p style="margin-top: 15px; font-weight: bold;">Save the Children</p>
+         
+      </footer>
+<script>
+        function updateClock() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+            };
+            const formattedDate = now.toLocaleDateString('en-ZA', options);
+            document.getElementById('currentYear').textContent = formattedDate;
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+    <div>
+      <!-- This is the code to my footer and contains the youtube video for save the children. -->
+            <!-- This is the styling of my youtube video-->
+       
+        <iframe width="700" height="250"
+            src="https://youtu.be/svMYgXqeTgI?si=yv_Y5icHJVrB7i8U"
+            title="Changing Lives for 100 Years | Save the Children"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+   
+</footer>
+
+</html>
