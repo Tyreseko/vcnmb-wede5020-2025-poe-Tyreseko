@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <!-- IIE, 2025 -->
   <meta charset="UTF-8">
@@ -8,11 +8,8 @@
 
   <meta name="description" content="Have any question about our foundation? Contact our team by submitting a enquiry">
   
-  <meta name="keywords" content="Submiting enquiry">
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
-
-
-  
+  <meta name="keywords" content="Submiting enquiry"> <!-- IIE,2025 -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" /> <!-- IIE,2025 -->
 </head>
 
 <body>
@@ -25,7 +22,7 @@
       background-color: #333;
       color: #fff;
       text-align: center;
-      border-radius: 10px;
+      border-radius: 10px; 
       padding: 16px;
       position: fixed;
       z-index: 1;
@@ -45,7 +42,7 @@
   <!-- Navigation -->
   <nav>
     <a href="Home.html">Home</a>
-    <a href="AboutUs.html">About Us</a>
+    <a href="AboutUs.html">About Us</a> <!-- IIE,2025 -->
     <a href="ServiceAndProducts.html">Services & Products</a>
     <a href="Enquiry.html">Enquiry</a>
     <a href="ContactUs.html">Contact Us</a>
@@ -54,7 +51,7 @@
 
   <h1 id="header">Enquiry & Registration Page</h1>
  
-  <!-- ===== Combined Form Starts Here ===== -->
+  <!-- IIE,2025 -->
   <form id="registrationForm" action="ST10467387@vcconnect.edu.za" method="post" enctype="text/plain">
     <!-- User Registration Section -->
     <h2>User Registration Form</h2>
@@ -65,7 +62,7 @@
 
     <label for="fullname">Full Name:</label><br>
     <input type="text" id="fullname" name="fullname" required>
-    <br><br>
+    <br><br> <!-- IIE,2025 -->
 
     <label for="email">Email:</label><br>
     <input type="text" id="email" name="email" required>
@@ -92,7 +89,7 @@
     <input type="number" id="age" name="age" min="1" required>
     <br><br>
 
-    <label for="AboutMe">Ask a Question:</label><br>
+    <label for="AboutMe">Ask a Question:</label><br> <!-- IIE,2025 -->
     <textarea name="AboutMe" id="AboutMe" rows="4" cols="40"></textarea>
     <br><br>
 
@@ -102,7 +99,7 @@
       <option value="Durban">Durban</option>
       <option value="East London">East London</option>
       <option value="Port Elizabeth">Port Elizabeth</option>
-    </select>
+    </select> <!-- IIE,2025 -->
     <br><br>
 
     <label for="Donate">Would you like to donate?</label>
@@ -121,7 +118,7 @@
 
     <!-- Buttons -->
     <button type="submit">Submit Form</button>
-    <button type="reset">Clear</button>
+    <button type="reset">Clear</button> <!-- IIE,2025 -->
 
     <p id="validationError" style="color: red; margin-top: 10px;"></p>
   </form>
@@ -129,11 +126,11 @@
 
   <script>
     const form = document.getElementById("registrationForm");
-    const toast = document.getElementById("toast");
+    const toast = document.getElementById("toast");  // IIE,2025
 
     form.addEventListener("submit", function(event) {
       event.preventDefault();
-    
+    // IIE,2025
     toast.classList.add("show");
 
     setTimeout(() => {
@@ -141,11 +138,11 @@
     }, 3000);
    });
   </script>
-  <!-- ===== Form Ends ===== -->
+  <!--  Form Ends  -->
     
   <!-- Footer -->
   <footer style="text-align: center; padding: 20px; background-color: var(#F5F5F5);">
-          <div class="image">
+          <div class="image">  
        <img src="images/square-instagram-brands-solid-full.svg"height="100" width="100">
        <img src="images/twitter-brands-solid-full.svg"height="100" width="100">
        <img src="images/tiktok-brands-solid-full.svg"height="100" width="100">
@@ -158,7 +155,7 @@
             const now = new Date();
             const options = {
                 weekday: 'long',
-                year: 'numeric',
+                year: 'numeric',  //IIE,2025
                 month: 'long',
                 day: 'numeric',
                 hour: '2-digit',
@@ -173,7 +170,7 @@
         setInterval(updateClock, 1000);
     </script>
     <div>
-      <!-- This is the code to my footer and contains the youtube video for save the children. -->
+      <!-- This is the code to my footer and contains the youtube video for save the children and the social media sites. -->
             <!-- This is the styling of my youtube video-->
        
         <iframe width="700" height="250"

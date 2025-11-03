@@ -7,36 +7,36 @@
   <meta name="description" content="All our contact details are provided on the contact page">
   <meta name="keywords" content="Contact details are provided">
 
-  <!-- Link to your CSS -->
+  <!-- This is the code for my map i implemented -->
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Leaflet CSS -->
+  <!-- This is the code for my map i implemented -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet/dist/leaflet.css"
   />
 
-  <!-- Leaflet JS -->
+  <!-- This is the code for my map i implemented -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <style>
 
-    /* Simple map styling */
+    /* Simple map styling for the map i implemented */
     #map {
       height: 400px;
       width: 100%;
       border-radius: 10px;
-      margin-top: 10px;
-    }
+      margin-top: 10px; 
+    } 
   </style>
 </head>
 
-<body>
+<body> <!-- IIE,2025 -->
  
   <nav>
     <a href="Home.html">Home</a>
-    <a href="AboutUs.html">About Us</a>
+    <a href="AboutUs.html">About Us</a>   <!-- The is my navigation code it is what allows the user to go to the different pages -->
     <a href="ServiceAndProducts.html">Services & Products</a>
     <a href="Enquiry.html">Enquiry</a>
     <a href="ContactUs.html">Contact Us</a>
@@ -46,7 +46,7 @@
   <h1 id="header">Contact us</h1>
 
   <h3 class="subheadings">Phone number</h3>
-  <li>070 - 338 44 48</li><br>
+  <li>070 - 338 44 48</li><br>  <!-- IIE,2025 -->
 
    <h3 class="subheadings">Gmail</h3>
   <li>info@savethechildren.nl</li><br>
@@ -54,48 +54,46 @@
    <h3 class="subheadings">Address</h3>
   <li>7 Bell Road</li><br>
 
-  <!-- 🌍 Leaflet Map replaces the old Google Maps iframe -->
+   <!-- This is the code for my map i implemented -->
   <div id="map"></div>
 
   <script>
-    // Create the map centered on your location
-    var map = L.map('map').setView([-33.9249, 18.4241], 13); // Example: Cape Town
+    // This is the code for my map i implemented
+    var map = L.map('map').setView([-33.9249, 18.4241], 13); 
 
-    // Add OpenStreetMap tiles
+    // This is the code for my map i implemented
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
         '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // Add a marker with popup
+    // This part of the code adds a marker with popup
     L.marker([-33.9249, 18.4241])
       .addTo(map)
       .bindPopup('<b>Save the Children</b><br>7 Bell Road')
       .openPopup();
   </script>
        
-
-
-        <h2>Enquiry Form</h2>
+    <h2>Enquiry Form</h2>
         <form action="#" method="post">
     <section id="subheadings">
     <label id="subheadings" for="name">Enter Name:</label><br>
     <input type="text" id="address" name="address" required>
-    <br><br>
-
+    <br><br> 
+      <!-- This is the code for the form -->
     <label for="profession">Enter Your Profession:</label><br>
     <input type="text" id="profession" name="profession" required>
     <br><br>
 
     <label for="age">Enter Age:</label><br>
     <input type="number" id="age" name="age" min="1" required>
-    <br><br>
+    <br><br>  <!-- IIE,2025 -->
 
     <label for="AboutMe">Ask a Question:</label><br>
     <textarea name="AboutMe" id="AboutMe" rows="4" cols="40"></textarea>
     <br><br>
 
-     <button type="submit">Submit Form</button>
+     <button type="submit">Submit Form</button> <!-- IIE,2025 -->
      </form>
      <script>
   // Toast message on submit
@@ -154,7 +152,7 @@
                 weekday: 'long',
                 year: 'numeric',
                 month: 'long',
-                day: 'numeric',
+                day: 'numeric', // IIE,2025
                 hour: '2-digit',
                 minute: '2-digit',
                 second: '2-digit',
@@ -167,14 +165,14 @@
         setInterval(updateClock, 1000);
     </script>
     <div>
-      <!-- This is the code to my footer and contains the youtube video for save the children. -->
+      <!-- This is the code to my footer and contains the youtube video for save the children and the social media sites. -->
             <!-- This is the styling of my youtube video-->
        
         <iframe width="700" height="250"
             src="https://youtu.be/svMYgXqeTgI?si=yv_Y5icHJVrB7i8U"
             title="Changing Lives for 100 Years | Save the Children"
             frameborder="0"
-            allowfullscreen>
+            allowfullscreen>  
         </iframe>
     </div>
    

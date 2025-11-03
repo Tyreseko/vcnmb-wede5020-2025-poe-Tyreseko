@@ -14,6 +14,8 @@ body {     /*IIE,2025 */
   font-weight: 400; /* 400 = normal, 700 = bold */
   line-height: 2.0; /* Space between lines (unitless is recommended) */
   letter-spacing: 0.5px; /* Space between letters */
+  text-transform: none;
+  text-rendering: optimizeLegibility;
      /* This is the nav code and it styles the navigation bar */
   nav {
       background-color: #d45151;
@@ -151,6 +153,7 @@ footer {                       /*This is the code that styles my footer */
       padding: 8px;
       margin-bottom: 20px;
       background-color: #ccc;
+      color: #ccc;
     }
 
     ul {
