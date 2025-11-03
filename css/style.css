@@ -40,6 +40,12 @@ body {     /*IIE,2025 */
     }
 }
 
+@media (max-width: 480px) {
+  .image-grid img {
+    max-width: 90%;
+  }
+}
+
 /* Header */
 #header {  /*IIE,2025 */
     color: #942f2f;
@@ -192,4 +198,22 @@ footer {                       /*This is the code that styles my footer */
   height: 250px; /* Equal height for uniform layout */
   object-fit: cover; /* Crops image to fill box without stretching */
   border-radius: 10px; /* Optional: smooth corners */
+}
+form {
+  max-width: 400px;
+  margin:0% auto;
+  background: #a15858;
+  padding: 20px;
+  border-radius: 8px;
+}
+label {
+  font-weight: bold ;
+
+}
+
+input, textarea {
+  width: 100px;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
 }
