@@ -108,7 +108,7 @@ After I submitted my two proposals, the sir said I needed to make a few changes.
 
 <ul>
 <li>27 October - Fixed my images that had blank spaces when in desktop mode</li>
-<li> Added more to  my typyography</li>
+<li>28 October-  Added more to  my typyography</li>
 </ul>
 
 <h3>Website</h3>
