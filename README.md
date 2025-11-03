@@ -76,13 +76,17 @@
   <li>Home Page – Call to action and logo</li>
   <li>Enquiry Page – User information and checkboxes</li>
   <li>Services Page – Information on services provided</li>
+  <li>Gallery - All images appear</li>
   <li>Contact Page – Contact information</li>
 </ul>
 
 <h3>Feedback</h3>
+<h4>Part 2</h4>
 <p>
   When I got my feedback from the sir, he said I had to change my KPI and my references.
   </p>
+  <h4>Part 3</h4>
+ <p> For part 3 i worked on a fixed issues the sir had with my part 2. </p>
 <h3> Screenshots tablet,desktop and mobile</h3>
 <h4>Webiste</h4>
 <img width="1337" height="707" alt="Screenshot 2025-09-28 103116" src="https://github.com/user-attachments/assets/dbb53781-f0cf-4f0d-8115-a3d3f355fa4c" />
@@ -100,6 +104,11 @@ After I submitted my two proposals, the sir said I needed to make a few changes.
   <li>9 August - Fixed m references.</li>
   <li>10 August - Made sure my headings were consistent.</li>
   <li>11 August - Added all my timelines across the three parts.</li>
+</ul>
+
+<ul>
+<li>27 October - Fixed my images that had blank spaces when in desktop mode</li>
+<li>28 October-  Added more to  my typyography</li>
 </ul>
 
 <h3>Website</h3>
