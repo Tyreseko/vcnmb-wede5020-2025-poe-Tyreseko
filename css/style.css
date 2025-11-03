@@ -162,4 +162,7 @@ footer {                       /*This is the code that styles my footer */
       width: 100%;
       border-radius: 10px;
     }
-
+ 
+    .twitter-tweet {
+  margin: 0 auto;
+}
