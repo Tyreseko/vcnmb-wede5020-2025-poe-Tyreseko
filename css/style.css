@@ -163,6 +163,33 @@ footer {                       /*This is the code that styles my footer */
       border-radius: 10px;
     }
  
-    .twitter-tweet {
+    #social {
+  text-align: center;
+  padding: 30px;
+}
+
+.tweet-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.twitter-tweet {
+  width: 350px; /* Controls how wide each tweet appears */
   margin: 0 auto;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 15px; /* Space between images */
+}
+
+.image-grid img {
+  width: 250px; /* Set equal width */
+  height: 250px; /* Equal height for uniform layout */
+  object-fit: cover; /* Crops image to fill box without stretching */
+  border-radius: 10px; /* Optional: smooth corners */
 }
